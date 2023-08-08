@@ -26,4 +26,5 @@ spring:
   sql:
     init:
       mode: always
-
+server:
+  port: ${SERVER_PORT:8080}
