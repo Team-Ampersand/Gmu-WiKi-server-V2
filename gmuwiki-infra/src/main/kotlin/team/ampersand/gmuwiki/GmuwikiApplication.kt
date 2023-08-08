@@ -1,4 +1,4 @@
-package team.ampersand.gmuwiki
+package team.ampersand
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
