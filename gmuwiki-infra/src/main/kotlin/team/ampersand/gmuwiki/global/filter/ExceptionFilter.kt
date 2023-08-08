@@ -22,15 +22,16 @@ class ExceptionFilter(
         response: HttpServletResponse,
         filterChain: FilterChain,
     ) {
-        try{
+        val result = runCatching {
             filterChain.doFilter(request, response)
-        } catch(e : Exception){
-            when(e.cause){
+        }
+
+        result.onFailure { e ->
+            when (e.cause) {
                 is GmuwikiException -> {
                     errorToJson((e.cause as GmuwikiException).errorProperty, response)
                 }
-
-                is Exception -> {
+                else -> {
                     errorToJson(InternalServerException.errorProperty, response)
                 }
             }
