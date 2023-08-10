@@ -1,11 +1,9 @@
-package team.ampersand.gmuwiki.domain.user.persistence.persist
+package team.ampersand.gmuwiki.domain.user.persistence.entity
 
 import jakarta.persistence.Column
 import jakarta.persistence.Entity
 import jakarta.persistence.EnumType
 import jakarta.persistence.Enumerated
-import jakarta.persistence.JoinColumn
-import jakarta.persistence.ManyToOne
 import jakarta.persistence.Table
 import team.ampersand.gmuwiki.domain.auth.model.constant.Authority
 import team.ampersand.gmuwiki.global.entity.BaseUUIDEntity

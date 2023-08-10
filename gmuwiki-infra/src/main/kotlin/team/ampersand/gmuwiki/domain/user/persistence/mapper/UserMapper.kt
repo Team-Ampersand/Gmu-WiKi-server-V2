@@ -1,9 +1,11 @@
 package team.ampersand.gmuwiki.domain.user.persistence.mapper
 
+import org.springframework.stereotype.Component
 import team.ampersand.gmuwiki.domain.user.model.User
-import team.ampersand.gmuwiki.domain.user.persistence.persist.UserEntity
+import team.ampersand.gmuwiki.domain.user.persistence.entity.UserEntity
 import team.ampersand.gmuwiki.global.mapper.GenericMapper
 
+@Component
 class UserMapper : GenericMapper<User, UserEntity>{
 
     override fun toDomain(entity: UserEntity?): User? {
