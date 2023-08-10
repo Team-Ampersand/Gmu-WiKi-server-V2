@@ -20,8 +20,6 @@ dependencies {
     runtimeOnly(Dependencies.JWT_IMPL)
     runtimeOnly(Dependencies.JWT_JACKSON)
 
-
-
     implementation(project(":gmuwiki-api"))
 }
 
@@ -35,8 +33,6 @@ kapt {
 tasks.getByName<Jar>("jar") {
     enabled = false
 }
-
-
 
 allOpen {
     annotation("javax.persistence.Entity")
