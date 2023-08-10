@@ -5,4 +5,5 @@ import team.ampersand.gmuwiki.domain.user.persistence.entity.UserEntity
 import java.util.UUID
 
 interface UserRepository : CrudRepository<UserEntity, UUID> {
+    fun findByEmail(email: String): UserEntity?
 }
