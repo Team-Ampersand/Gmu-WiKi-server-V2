@@ -12,6 +12,7 @@ class RefreshTokenPersistenceAdapter(
     private val refreshTokenRepository: RefreshTokenRepository,
     private val refreshTokenMapper: RefreshTokenMapper
 ) : RefreshTokenSpi{
+
     override fun queryRefreshTokenByToken(token: String): RefreshToken? =
         refreshTokenRepository.findByIdOrNull(token)
             .let { refreshTokenMapper.toDomain(it) }
