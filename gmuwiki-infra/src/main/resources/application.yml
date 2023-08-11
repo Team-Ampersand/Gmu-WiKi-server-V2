@@ -26,5 +26,11 @@ spring:
   sql:
     init:
       mode: always
+
+secret:
+  secretKey: ${SECRET_KEY:1234567890987654321234567890qwertyuiopoijhgfdsa}
+  accessExp: ${ACCESS_EXP:1800}
+  refreshExp: ${REFERSH_EXP:108000}
+
 server:
   port: ${SERVER_PORT:8080}
