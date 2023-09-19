@@ -26,4 +26,14 @@ object Dependencies {
     const val SPRING_TEST = "org.springframework.boot:spring-boot-starter-test:${PluginVersions.SPRING_BOOT}"
     const val SPRING_SECURITY_TEST = "org.springframework.security:spring-security-test"
     const val MOCKITO_KOTLIN = "org.mockito.kotlin:mockito-kotlin:${PluginVersions.MOCKITO_KOTLIN_VERSION}"
+
+    // r2dbc
+    const val R2DBC = "org.springframework.boot:spring-boot-starter-data-r2dbc"
+    const val R2DBC_MYSQl = "io.asyncer:r2dbc-mysql:1.0.2"
+
+    // redis
+    const val REACTIVE_REDIS = "org.springframework.boot:spring-boot-starter-data-redis-reactive"
+    const val WEBFLUX = "org.springframework.boot:spring-boot-starter-webflux"
+    const val COROUTINES_REACTOR = "org.jetbrains.kotlinx:kotlinx-coroutines-reactor"
+    const val REACTOR = "io.projectreactor.kotlin:reactor-kotlin-extensions"
 }

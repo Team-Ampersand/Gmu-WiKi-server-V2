@@ -16,6 +16,18 @@ dependencies {
     implementation(Dependencies.SPRING_REDIS)
     kapt(Dependencies.CONFIGURATION_PROCESSOR)
 
+    // r2dbc
+    implementation(Dependencies.R2DBC)
+    implementation(Dependencies.R2DBC_MYSQl)
+
+    // redis
+    implementation(Dependencies.REACTIVE_REDIS)
+
+    // webflux
+    implementation(Dependencies.WEBFLUX)
+    implementation(Dependencies.COROUTINES_REACTOR)
+    implementation(Dependencies.REACTOR)
+
     implementation(Dependencies.JWT_API)
     runtimeOnly(Dependencies.JWT_IMPL)
     runtimeOnly(Dependencies.JWT_JACKSON)
